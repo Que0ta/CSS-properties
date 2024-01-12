@@ -1,0 +1,16 @@
+@media screen and (max-width: 550px) {
+    .text_info{
+        font-size: 15px;
+    }
+
+    .Abimg{
+        width: 100px;
+    }
+
+    .text_logo{
+        display: none;
+    }
+    .projects{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden; /* Prevent particles from overflowing */
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1 ; /* Set z-index to -1 to position it behind other elements */
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+}
+
+/*body{
+    background: url(img/bg4.jpg_large) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px); 
+     background: #3890d3; 
+}*/
+/* body{
+    font-family: 'Times New Roman', Times, serif;
+} !!!IMAGE BACKGROUND!!!*/
+
+/*
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s infinite alternate;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+}}  '''Gradient BG'''*/
+nav {
+    background: #00518f;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color:  white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+.logo_img{
+    width: 28px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+a.active, ul a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn{
+    margin-top: 25px;
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+
+  #check{
+    display: none;
+  }
+
+/* MAIN */
+
+main {
+    margin-top: 10vw;   
+    font-size: 30px;
+}
+
+#AboutInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 70%;
+    padding: 3vw;
+    border-radius: 5vw;
+    box-shadow: 8px 8px 2px 1px rgba(137, 137, 137, 0.2);
+
+}
+#info{
+display: flex;
+justify-content: center;
+}
+
+.Abimg {
+    margin-left: 5vw;
+    box-shadow: 8px 8px 2px 1px rgba(137, 137, 137, 0.2);
+    border-radius: 50%;
+    
+    object-fit: contain;
+    
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+#inside_pr{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    width: 70%;
+    padding: 3vw;
+    border-radius: 5vw;
+    box-shadow: 8px 8px 2px 1px rgba(137, 137, 137, 0.2);
+}
+
+#inside_pr a{
+    text-decoration: none;
+    color: black;
+}
+
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .logo_img{
+        width: 23px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(142, 183, 234);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .logo_img{
+        width: 23px;
+    }
+}
+@media (max-width: 300px){
+    .logo_img{
+        width: 32px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+    /* section{
+        background: url(bg1.jpg) no-repeat;
+        background-size: cover;
+        height: calc(100vh - 80px);
+      } */
+
+
