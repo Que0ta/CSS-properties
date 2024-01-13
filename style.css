@@ -110,16 +110,31 @@ main {
 }
 
 #AboutInfo {
+    position: relative; /* important for bg*/
     display: flex;
     justify-content: center;
     align-items: center;
-    background: white;
     width: 70%;
+    height: 300px;   /* important for bg*/
     padding: 3vw;
     border-radius: 5vw;
     box-shadow: 8px 8px 2px 1px rgba(137, 137, 137, 0.2);
-
+    z-index: 2;      /* important for bg*/
+    overflow: hidden;    /* important for bg*/
 }
+
+#AboutInfo::before{
+    content: "";  /* important for bg*/
+    width: 100%;  /* important for bg*/
+    height: 100%;  /* important for bg*/
+    position: absolute;   /* important for bg*/
+    background-image: url(img/horizontal-wide-illustration-picturesque-part-seacoast_969005-6.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -3;  /* important for bg*/
+    filter: blur(3px);
+}
+
 #info{
 display: flex;
 justify-content: center;
@@ -172,15 +187,20 @@ justify-content: center;
 }
 
 @media (max-width: 858px){
+
     .checkbtn{
         display: block;
     }
 
     ul{
+        z-index: 3;
         position: fixed;
         width: 100%;
         height: 100vh;
-        background-color: rgb(142, 183, 234);
+        background-image: url(img/blues.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         top: 80px;
         left: -100%;
         text-align: center;
