@@ -4,14 +4,14 @@ function updateDateTime() {
     var currentDateTime = new Date();
 
     var options = {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
+        // weekday: 'short',
+        // year: 'numeric',
+        // month: 'short',
+        // day: 'numeric',
         hour: 'numeric',
         minute: 'numeric',
         second: 'numeric',
-        hour12: true
+        hour12: false
     };
 
     var formattedDateTime = currentDateTime.toLocaleDateString('en-US', options);
